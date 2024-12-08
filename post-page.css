@@ -1,0 +1,179 @@
+/* Rotating PNG styling */
+.rotating-background {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: -1;
+    width: 100%; /* Increase size for better visibility */
+    height: auto;
+    opacity: 0.05; /* Reduce visibility for subtle effect */
+    animation: rotate 60s linear infinite;
+}
+
+
+/* Animation keyframes for rotation */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F1E2BA;
+    position: relative;
+    overflow: hidden; /* Ensure no scrollbars appear during rotation */
+}
+
+
+/* Main heading styling */
+h1 {
+    color:#E8112D;
+    text-align: center;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 150, 'SEIS' 100;
+    font-size: 130pt;
+    position: relative; /* Enables positioning for <p> */
+    margin: 0; /* Remove default margins */
+    margin-bottom: -20px; /* Adjust spacing below <h1> */
+    margin-top:-60px;
+}
+
+/* Paragraph styling */
+p {
+    /* font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 400, 'SEIS' 100;
+    color: black;
+    font-size: 25pt;
+margin-top: 130px;
+
+
+   
+}
+
+/* Button styling */
+
+
+/* Subheading styling */
+h3 {
+    font-weight: 550;
+    color: black;
+    font-family: "Codystar", sans-serif;
+    font-weight: 600;
+    font-size: 75.99pt;
+    margin: 20px 0 0 0; /* Move down by 200px */
+    text-align: left;
+ 
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    height: 300px;
+}
+
+.content-container {
+    margin-top: -100px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #eab628;
+    display: flex;
+    justify-content: space-between; /* Space between left and right containers */
+    align-items: flex-start; /* Align items at the top */
+    width: 80%; /* Adjust as needed for the overall width */
+    margin-top: 30px;
+    gap: 20px; /* Add space between left and right sections */
+}
+
+/* Left side: text container */
+.text-container {
+    flex: 1; /* Take up one part of the available space */
+    text-align: left;
+}
+.text-container button {
+    border: none;
+    color:#11adc5;
+    background-color:#F8EED4;
+    border-radius: 10px;
+    font-family: Impact, sans-serif;
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -50px;
+}
+
+.text-container button a {
+    color: #11adc5;
+    text-decoration: none;
+}
+.text-container button a:hover {
+    color: #0b8ca0;
+    text-decoration: none;
+}
+.image-container {
+    border-radius: 20px;
+    background-color: #F8EED4;
+    flex: 1; /* Take up one part of the available space */
+    display: flex;
+    flex-direction: column; /* Stack image and button vertically */
+    align-items: center; /* Center align image and button */
+    text-align: center;
+    position: relative; /* Required for positioning child elements absolutely */
+    width: 100%; /* Constrain the container width */
+    height: auto; /* Allow the height to adjust to content */
+    max-width: 400px; /* Add a maximum width for layout stability */
+}
+
+.image-container button {
+    position: absolute; /* Position the button relative to the .image-container */
+    top: 10px; /* Distance from the top edge */
+    right: 10px; /* Distance from the right edge */
+    z-index: 1; /* Ensure the button appears above other elements */
+    border: none;
+    color: black;
+    background-color: #11adc5;
+    border-radius: 10px;
+    font-family: Impact, sans-serif;
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.image-container button a {
+    color: #F8EED4;
+    text-decoration: none;
+}
+
+.image-container button:hover {
+    background-color: #027a8a;
+    color: #F1E2BA;
+}
+
+.image-container img {
+    width: 80%; /* Make the image responsive */
+    height: 80%; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 100px; /* Ensure it doesn't overlap with the button */
+    margin-bottom: 100px;
+}
+

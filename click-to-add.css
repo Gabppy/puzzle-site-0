@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+    background-color: #F1E2BA;
+    position: relative; /* Enable relative positioning for child elements */
+}
+
+#image-container {
+    position: fixed; /* Fix the container to the viewport */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    pointer-events: none; /* Allow interaction with elements below */
+}
+
+        img {
+            position: absolute;
+          
+            cursor: grab;
+            max-width: none; 
+        }
+
+        img:active {
+            cursor: grabbing;
+        }
+
+/* Main heading styling */
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 150, 'SEIS' 100;
+    font-size: 130pt;
+    margin-top: -20px;
+    position: relative; /* Enables positioning for <p> */
+}
+
+/* Paragraph styling */
+p {
+    /* font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 400, 'SEIS' 100;
+    color: #00ADC6;
+    font-size: 18.88pt;
+    position: absolute; /* Position relative to <body> or parent with position: relative */
+    top: 16%; /* Adjust to position below the h1's right corner */
+    left: 80%; /* Place it under the right corner */
+    transform: rotate(-15deg); /* Tilt the paragraph */
+    margin: 0;
+}
+
+/* Button styling */
+button {
+    border-width: 0;
+    color: black;
+    background-color: #00ADC6;
+    border-radius: 20px;
+    font-family: "Codystar", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 75.99pt;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 345px; /* Move button down by 200px */
+}
+
+button:hover {
+    background-color: #038ea4; /* Change background on hover */
+    color: black; /* Change text color on hover */
+}
+
+/* Subheading styling */
+h3 {
+    color: black;
+    font-family: Impact; font-size: 22pt; font-style: normal; font-variant: normal; font-weight: 200; line-height: 27.5px;
+    margin: 20px 0 0 0; /* Move down by 200px */
+    text-align: center;
+    margin: 20px 0 0 0; /* Move down by 200px */
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

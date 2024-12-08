@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Start content from the top */
+    height: 100vh;
+    margin: 0;
+    background-color: #F1E2BA;
+    position: relative;
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+/* Main heading styling */
+h1 {
+  
+    color: #E8112D;
+    text-align: center;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 'wght' 150, 'SEIS' 100;
+    font-size: 130pt;
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
+/* Paragraph styling */
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0cbbd6;
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #E8112D;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+
+button a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20pt;
+    color: #33d3ec;
+    text-decoration: none;
+}
+
+/* Image container layout */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image rows vertically */
+    align-items: center; /* Center align rows */
+    gap: 20px; /* Space between rows */
+    margin-top: 40px;
+}
+
+/* Image row styling */
+.image-row {
+    display: flex;
+    justify-content: center; /* Center images in a row */
+    gap: 20px; /* Space between images */
+}
+.image-row-2 {
+    margin: -50px;
+    display: flex;
+    justify-content: center; /* Center images in a row */
+    gap: 20px; /* Space between images */
+}
+
+/* Individual image styling */
+img {
+    padding: 20px;
+    border-radius: 20px;
+    height: 300px; /* Adjust size for consistency */
+    width: auto; /* Maintain aspect ratio */
+    /* border: 5px solid #E8112D; */
+    background-color: #F8EED4;
+}
+
