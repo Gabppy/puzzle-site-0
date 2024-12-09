@@ -59,7 +59,7 @@ p {
     font-variation-settings: 'wght' 400, 'SEIS' 100;
     color: black;
     font-size: 25pt;
-margin-top: 130px;
+margin-top: 20px;
 
 
    
@@ -177,3 +177,10 @@ img{
     margin-bottom: 100px;
 }
 
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 17pt;
+    margin-bottom: 70px;
+    margin-top: -2px;
+}
