@@ -55,11 +55,11 @@ p {
     /* font-family: "Carlito", sans-serif;
     font-weight: 400;
     font-style: normal; */
-    font-family: "seismic-latin-variable", sans-serif;
+    font-family: carlito;
     font-variation-settings: 'wght' 400, 'SEIS' 100;
     color: black;
-    font-size: 25pt;
-margin-top: 20px;
+    font-size: 17pt;
+margin-top: 120px;
 
 
    
@@ -178,7 +178,7 @@ img{
 }
 
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: carlito;
     font-weight: 50;
     font-size: 17pt;
     margin-bottom: 70px;
